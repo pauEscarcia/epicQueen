@@ -12,7 +12,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/style4.css" />
-		<script src="js/modernizr.custom.72111.js"></script>
+		<script src="js/modernizr.custom.63321.js"></script>
 		<style>
 			.no-cssanimations .rw-wrapper .rw-sentence span:first-child{
 				opacity: 1;
