@@ -15,7 +15,7 @@
 		<style>	
 			@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 			body {
-				background: #7f9b4e url(images/bg5.jpg) no-repeat center top;
+				background: #7f9b4e url(images/bg5.jpg) repeat center top;
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				background-size: cover;
@@ -67,11 +67,25 @@
 					<p>
 				    	<label for="formulario1">Code party</label>
 				    	<input type="checkbox" name="check_list[]" value="SketchUp">SketchUp<br>
+				    	<IMG SRC="images/sket.png"  ALT="EpicQueen"><br>
+
+				   
 				    	<input type="checkbox" name="check_list[]" value="Software Kids">Software Kids<br>
+				    	<IMG SRC="images/sw.png"  ALT="EpicQueen"><br>
+
 				    	<input type="checkbox" name="check_list[]" value="Scratch">Scratch <br>
+				    	<IMG SRC="images/sc.png"  ALT="EpicQueen"><br>
+
 				    	<input type="checkbox" name="check_list[]" value="Arduino">Arduino<br>
+				    	<IMG SRC="images/ar.png"  ALT="EpicQueen"><br>
+
 				    	<input type="checkbox" name="check_list[]" value="Balsamic">Balsamic<br>
+				    	<IMG SRC="images/ba.png"  ALT="EpicQueen"><br>
+
+
 				    	<input type="checkbox" name="check_list[]" value="Kids Ruby">Kids Ruby<br><br>
+				    	<IMG SRC="images/kr.png"  ALT="EpicQueen"><br><br>	
+
 				        <input type="submit" name="submit" Value="Siguiente"/>	
 				        <br></br>  <br></br> 
 				        <?php include 'checkbox_value.php';?>   

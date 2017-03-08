@@ -17,24 +17,25 @@
 			.no-cssanimations .rw-wrapper .rw-sentence span:first-child{
 				opacity: 1;
 			}
+			body {
+				background: #7f9b4e url(images/bg7.jpg) repeat center top;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				background-size: cover;
+			}
 		</style>
-		<!--[if lt IE 9]> 
-			<style>
-				body{ background: #fff; }
-				.rw-wrapper{ display: none; } 
-				.rw-sentence-IE{ display: block;  }
-			</style>
-		<![endif]-->
+		
     </head>
     <body>
         <div class="container">
-			<!-- Codrops top bar -->
+			
             <div class="codrops-top">
               
                	
                 <div class="clr"></div>
-            </div><!--/ Codrops top bar -->
+            </div>
 			<header>
+					<IMG SRC="images/logo.png"  ALT="EpicQueen">
 					<h1><strong>Formulario de Análisis de Software </strong>en Epic Queen</h1>
 				
 			</header>
