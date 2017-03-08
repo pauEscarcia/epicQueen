@@ -38,44 +38,42 @@
 			
 			<section class="main">
 				<form class="form-2" action="formulario2.php" method="post">
-				    <h1>Datos del mentor</h1>
+				    <h1>Datos del mentor</h1><br>
 				    <p>
 				        <label>Nombre</label>
 				        <input type="text" name="nombre" placeholder="Nombre" required>
+				        <br>
 				    </p>
 				    <p>
-				        <label for="formulario1">Profesion</label>
+				        <label for="formulario1">Profesión</label>
 				        <input type="text" name='profesion' placeholder="Profesión" required> 
+				        <br>
 				    </p>
 				    <p>
 				        <label for="formulario1">Edad</label>
 				        <input type="text" name='Edad' placeholder="Edad" required> 
+				        <br>
 				    </p>
 
 				    <p>
-				    	<label for="formulario1">Genero</label>
+				    	<label for="formulario1">Género</label>
 				    	<input type="radio" name="genero" value="femenino"> Femenino<br>
 				    	<input type="radio" name="genero" value="masculino"> Masculino<br>
-				    	
+				    	<br>
 					</p>
 
 					<p>
 				    	<label for="formulario1">Code party</label>
-				    	<input type="checkbox" name="check_list[]" value="Code party 1 : SketchUp"> Code party 1 : SketchUp<br>
-				    	<input type="checkbox" name="check_list[]" value="Code party 2: Software Kids"> Code party 2: Software Kids<br>
-				    	<input type="checkbox" name="check_list[]" value="Code party 3: Scratch">Code party 3: Scratch <br>
-				    	<input type="checkbox" name="check_list[]" value="Code party5: Arduino"> Code party5: Arduino<br>
-				    	<input type="checkbox" name="check_list[]" value="Code party 8: Balsamic y Kids Ruby"> Code party 8: Balsamic y Kids Ruby<br>
+				    	<input type="checkbox" name="check_list[]" value="SketchUp">SketchUp<br>
+				    	<input type="checkbox" name="check_list[]" value="Software Kids">Software Kids<br>
+				    	<input type="checkbox" name="check_list[]" value="Scratch">Scratch <br>
+				    	<input type="checkbox" name="check_list[]" value="Arduino">Arduino<br>
+				    	<input type="checkbox" name="check_list[]" value="Balsamic">Balsamic<br>
+				    	<input type="checkbox" name="check_list[]" value="Kids Ruby">Kids Ruby<br><br>
 				        <input type="submit" name="submit" Value="Siguiente"/>	
-				        <br></br>  <br></br>
+				        <br></br>  <br></br> 
 				        <?php include 'checkbox_value.php';?>   
 					</p>
-
-				
-
-				    <p>
-				       <!-- <input type="siguente" name="siguiente" value="Siguiente">-->
-				    </p>    
 				   
 				</form>​
 			</section>
