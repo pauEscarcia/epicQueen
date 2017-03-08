@@ -15,7 +15,7 @@
 		<style>	
 			@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 			body {
-				background: #7f9b4e url(images/bg2.jpg) no-repeat center top;
+				background: #7f9b4e url(images/bg6.jpg) repeat center top;
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				background-size: cover;
@@ -30,6 +30,7 @@
     <body>
         <div class="container">
 			<header>
+				<IMG SRC="images/logo.png"  ALT="EpicQueen">
 				<h1><strong>Formulario de Análisis de Software </strong>en Epic Queen</h1>
 				<br></br>
 				<p>Este formulario esta diseñado para determinar cual es el mejor </p>
@@ -46,7 +47,7 @@
 
 				    <p>
 				    	<label > ¿Qué tecnología te gustaría que se usará en Epic Queen?</label>
-				        <input type="text" name='tecnologia' placeholder="tecnologia" required> 
+				        <input type="text" name='tecnología' placeholder="tecnologia" required> 
 				     	
 				    </p>    
 
