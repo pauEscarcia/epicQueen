@@ -1,8 +1,13 @@
 <?php
 	$tres=1;
 	
-	
+
 		if(!empty($_POST['check_list'])) {
+
+			$nombre= $_POST['nombre'];
+			$profesion= $_POST['profesion'];
+			$edad= $_POST['Edad'];
+			$genero= $_POST['genero'];
 
 			$seleccionados = $_POST['check_list'];
 			$sel_count = count($seleccionados);
@@ -67,6 +72,11 @@
 			}
 			echo "<p>¿Por qué?</p>";
 			echo"<input type=\"text\" name='textdificil' placeholder=\"¿Por qué en esa tecnología fue más difil de instalar?\" required><br>"; 
+
+			echo "<input type='hidden' name='nombre' value='$nombre' >"; 
+			echo "<input type='hidden' name='profesion' value='$profesion' >"; 
+			echo "<input type='hidden' name='edad' value='$edad' >"; 
+			echo "<input type='hidden' name='genero' value='$genero' >"; 
 				
 		}
 
