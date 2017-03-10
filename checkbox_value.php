@@ -1,6 +1,7 @@
 <?php
 	$tres=1;
-	if(isset($_POST['submit'])){
+	
+	
 		if(!empty($_POST['check_list'])) {
 
 			$seleccionados = $_POST['check_list'];
@@ -9,9 +10,10 @@
 			echo " <br> Seleccionaste ".$checked_count." tecnologías <br/><br>";
 
 			echo "<p><strong>Instrucciones: </strong> Selecciona de acuerdo a lo que consideres </p> <br>";
+
 			echo "<label > Mayor motivación de los niños </label >";
 			for ($col=0; $col < $checked_count; $col++) {
-				echo "<input type=\"radio\" name=\"motivacion\" value=\"$seleccionados[$col]\"> $seleccionados[$col]  <br>";
+				echo "<input type=\"radio\" name=\"motivacion\" value=\"$seleccionados[$col]\" requiered> $seleccionados[$col]  <br>";
 			}
 			echo "<p>¿Por qué? </p>";
 			echo"<input type=\"text\" name='textMotivacion' placeholder=\"¿Por qué esa tecnología motivo más a los niños?\" required><br>"; 
@@ -61,13 +63,13 @@
 					
 			echo "<label >Qué tecnologías fue más difícil de instalar </label > ";
 			for ($col=0; $col < $checked_count; $col++) {
-				echo "<option value=\"$seleccionados[$col]\">$seleccionados[$col]</option> ";
+				echo "<input type=\"radio\" name=\"dificil\" value=\"$seleccionados[$col]\"> $seleccionados[$col]<br> ";
 			}
 			echo "<p>¿Por qué?</p>";
-			echo"<input type=\"text\" name='textApoyo' placeholder=\"¿Por qué en esa tecnología fue más difil de instalar?\" required><br>"; 
+			echo"<input type=\"text\" name='textdificil' placeholder=\"¿Por qué en esa tecnología fue más difil de instalar?\" required><br>"; 
 				
 		}
 
-	}
+	
 ?>
 

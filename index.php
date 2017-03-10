@@ -11,6 +11,7 @@
         <link rel="shortcut icon" href="../favicon.ico"> 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/modernizr.custom.63321.js"></script>
+		<script src="js/validar.js"></script>
 		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
 		<style>	
 			@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
@@ -39,33 +40,34 @@
 			</header>
 			
 			<section class="main">
-				<form class="form-2" action="formulario2.php" method="post">
+				<form id="miform" class="form-2" action="formulario2.php" method="post" >
 				    <h1>Datos del mentor</h1><br>
 				    <p>
 				        <label>Nombre</label>
-				        <input type="text" name="nombre" placeholder="Nombre" required>
+				        <input type="text" name="nombre" placeholder="Nombre"  id= "txtNom" required>	<p id="name" class="valida"></p>
 				        <br>
 				    </p>
 				    <p>
 				        <label for="formulario1">Profesión</label>
-				        <input type="text" name='profesion' placeholder="Profesión" required> 
+				        <input type="text" name='profesion' placeholder="Profesión" id="txtPro" required> <p id="pro" class="valida"></p>
 				        <br>
 				    </p>
 				    <p>
 				        <label for="formulario1">Edad</label>
-				        <input type="text" name='Edad' placeholder="Edad" required> 
+				        <input type="text" name='Edad' placeholder="Edad" id="txtEdad"required> <p id="edad" class="valida"></p>
 				        <br>
 				    </p>
 
 				    <p>
 				    	<label for="formulario1">Género</label>
-				    	<input type="radio" name="genero" value="femenino"> Femenino<br>
-				    	<input type="radio" name="genero" value="masculino"> Masculino<br>
+				    	<input type="radio" name="genero" value="femenino" id="radFem"> Femenino<br>
+				    	<input type="radio" name="genero" value="masculino" id="radMas"> Masculino<br> 
+				    	<p id="gen" class="valida"></p>
 				    	<br>
 					</p>
 
 					<p>
-				    	<label for="formulario1">Code party</label>
+				    	<label for="formulario1">Selecciona 2 o más tecnologías en donde estuviste: </label>
 				    	<input type="checkbox" name="check_list[]" value="SketchUp">SketchUp<br>
 				    	<IMG SRC="images/sket.png"  ALT="EpicQueen"><br>
 
@@ -86,7 +88,13 @@
 				    	<input type="checkbox" name="check_list[]" value="Kids Ruby">Kids Ruby<br><br>
 				    	<IMG SRC="images/kr.png"  ALT="EpicQueen"><br><br>	
 
-				        <input type="submit" name="submit" Value="Siguiente"/>	
+				    	<p id="code" class="valida"></p>
+
+				    	<input type="button" value="Enviar" id="enviar" onclick="validar()"/> 
+				    	
+
+
+				        <!--<input type="submit" name="submit" Value="Siguiente" onclick="validar()" />	-->
 				        <br></br>  <br></br> 
 				        <?php include 'checkbox_value.php';?>   
 					</p>
