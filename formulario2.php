@@ -38,7 +38,7 @@
 			</header>
 			
 			<section class="main">
-				<form class="form-2" action="formulario3.php" method="post">
+				<form class="form-2" action="apgform1.7.php" method="post">
 				    <h1>Comparación de code partys</h1>
 				        <?php include 'checkbox_value.php';?>   
 					</p>

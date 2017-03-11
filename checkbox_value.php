@@ -12,6 +12,12 @@
 			$seleccionados = $_POST['check_list'];
 			$sel_count = count($seleccionados);
 			$checked_count = count($_POST['check_list']);
+
+			
+			echo "<input type='hidden' name='nombre' value='$nombre' >"; 
+			echo "<input type='hidden' name='profesion' value='$profesion' >"; 
+			echo "<input type='hidden' name='edad' value='$edad' >"; 
+			echo "<input type='hidden' name='genero' value='$genero' >"; 
 			echo " <br> Seleccionaste ".$checked_count." tecnologías <br/><br>";
 
 			echo "<p><strong>Instrucciones: </strong> Selecciona de acuerdo a lo que consideres </p> <br>";
@@ -73,10 +79,6 @@
 			echo "<p>¿Por qué?</p>";
 			echo"<input type=\"text\" name='textdificil' placeholder=\"¿Por qué en esa tecnología fue más difil de instalar?\" required><br>"; 
 
-			echo "<input type='hidden' name='nombre' value='$nombre' >"; 
-			echo "<input type='hidden' name='profesion' value='$profesion' >"; 
-			echo "<input type='hidden' name='edad' value='$edad' >"; 
-			echo "<input type='hidden' name='genero' value='$genero' >"; 
 				
 		}
 
